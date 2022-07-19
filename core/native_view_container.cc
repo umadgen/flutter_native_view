@@ -30,7 +30,7 @@ HWND NativeViewContainer::Create() {
   window_class.hbrBackground = ::CreateSolidBrush(0);
   ::RegisterClassExW(&window_class);
   handle_ =
-      ::CreateWindow(kClassName, kWindowName, WS_OVERLAPPEDWINDOW,
+      ::CreateWindow(kClassName, kWindowName, WS_OVERLAPPEDWINDOW | WS_POPUPWINDOW | WS_VISIBLE,
                      CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
                      nullptr, nullptr, GetModuleHandle(nullptr), nullptr);
   // Disable DWM animations on |native_view_container|.
