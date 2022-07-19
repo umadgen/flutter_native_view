@@ -41,7 +41,7 @@ class NativeViewContainer {
  private:
   static std::unique_ptr<NativeViewContainer> NativeViewContainer::instance_;
   static constexpr auto kClassName = L"FLUTTER_NATIVE_VIEW";
-  static constexpr auto kWindowName = L"flutter_native_viewwww";
+  static constexpr auto kWindowName = L"flutter_native_view";
 
   static LRESULT CALLBACK NativeViewContainer::WindowProc(
       HWND const window, UINT const message, WPARAM const wparam,

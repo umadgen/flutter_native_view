@@ -6,4 +6,4 @@
 /// Default method channel name.
 /// Only used for window proc registration.
 ///
-const String kMethodChannelName = 'flutter_native_viewwww';
+const String kMethodChannelName = 'flutter_native_view';
